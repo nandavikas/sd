@@ -6,9 +6,12 @@ window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
 	title: {
-		text: "Importance of maintaing discipline"
+		text: "As the number of holdings increases, risk declines"
 	},
-	axisY2: {
+  axisX: {
+    title: "Number of stocks"
+  },
+	axisY: {
 		title: "Cummulative Return %",
 	},
 	toolTip: {
@@ -24,7 +27,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [
 	{
 		type: "line",
-		name: "70/30 Equity/Fixed Income",
+		name: "2000–2010",
 		showInLegend: true,
 		markerSize: 0,
 		dataPoints: [
@@ -124,7 +127,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	},
 	{
 		type: "line",
-		name: "100 % Cash",
+		name: "1950–1959",
 		showInLegend: true,
 		markerSize: 0,
 		dataPoints: [
